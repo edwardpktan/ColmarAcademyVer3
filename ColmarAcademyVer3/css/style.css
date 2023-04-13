@@ -1,0 +1,657 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Start of Desktop Version */
+body {
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #989898;
+}
+
+/* Custom font sizes and colors */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #4f4f4f
+}
+
+/* Start of Nav Bar Style */
+.navBar {
+    display: flex;
+    height: 64px;
+    /*Nav Bar height*/
+    position: fixed;
+    /*Nav Bar position fixed as user scrolls*/
+    background-color: #fff;
+    /*opacity: 0.8;*/
+    width: 100%;
+}
+
+#logo {
+    margin: auto 0px;
+    margin-left: 24px;
+}
+
+#logoTitle {
+    margin: auto 0px;
+}
+
+#logoTitle h5 {
+    color: #9f9b9b;
+    font-weight: 600px;
+}
+
+#logoTitle span {
+    color: #01161E;
+    font-weight: bold;
+}
+
+nav {
+    margin: auto 0px;
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding-left: 16px;
+}
+
+/* End of Nav Bar Style */
+
+/* Start of 1/4 Container */
+.container1 {
+    display: flex;
+    /* Display: flex to make elements in a row */
+    background-color: #c4c2c2;
+}
+
+#imageContainer1 {
+    width: 60%;
+    /* container that holds the image take up 60% of .container1 */
+    margin: 0 24px;
+    margin-top: 96px;
+    /* 32px + 64px so that the Nav Bar will not overlap this section */
+    margin-bottom: 32px;
+}
+
+#imageContainer1 img {
+    /* taking up the full space of the #imageContainer1 */
+    width: 100%;
+    height: 100%;
+}
+
+#paraContainer1 {
+    margin: auto;
+    /* taking up the center space */
+    margin-left: 0;
+    /* shifting to the left */
+}
+
+#paraContainer1 h1 {
+    margin-bottom: 16px;
+    /* making 16px of space between h1 and p */
+}
+
+#startHereButton {
+    background-color: #515151;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    width: 60%;
+}
+
+/* End of 1/4 Container */
+
+/* Start of 2/4 Container */
+.container2 {
+    display: flex;
+
+}
+
+#imageContainer2 {
+    width: 60%;
+    /*margin: 32px 24px;*/
+    padding: 32px 24px;
+
+}
+
+#imageContainer2 img {
+    width: 100%;
+}
+
+#imageContainer2 h2 {
+    margin-top: 32px;
+}
+
+#imageContainer2 p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#eventContainer2 {
+    padding-right: 24px;
+    padding-top: 16px;
+}
+
+#orientation {
+    display: flex;
+
+}
+
+#orientationImage {
+    width: 35%;
+    /* #orientationImage takes up 35% of #orientaion space */
+    padding: 16px;
+}
+
+#orientationImage img {
+    width: 100%;
+    height: auto;
+}
+
+#orientationInfo {
+    width: 65%;
+    margin: auto;
+}
+
+#orientationInfo p {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#campus {
+    display: flex;
+
+}
+
+#campusImage {
+    width: 35%;
+    padding: 16px;
+
+}
+
+#campusImage img {
+    width: 100%;
+    height: auto;
+}
+
+#campusInfo {
+    width: 65%;
+    margin: auto;
+}
+
+#campusInfo p {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#guestLecture {
+    display: flex;
+
+}
+
+#guestLectureImage {
+    width: 35%;
+    padding: 16px;
+
+}
+
+#guestLectureImage img {
+    width: 100%;
+    height: auto;
+}
+
+#guestLectureInfo {
+    width: 65%;
+    margin: auto;
+}
+
+#guestLectureInfo p {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#eventContainer2 a {
+    color: #4577bc;
+    text-decoration: none;
+}
+
+/* End of 2/4 Container */
+
+/* Start of 3/4 Container */
+.container3 {
+    background-color: #e1dfdf;
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.container3 h2 {
+    padding: 32px 0;
+    text-align: center;
+}
+
+#coursesContainer3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 32px;
+    /* creating gaps between rows */
+
+    width: 100%;
+}
+
+.coursesRow {
+    display: flex;
+    column-gap: 32px;
+    width: 100%;
+    padding: 0 72px;
+}
+
+#coursesContainer3 .courses {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* i figured it out... Created .coursesRow to solve this.*/
+}
+
+#coursesContainer3 .courses img {
+    width: 100%;
+}
+
+.courses span {
+    margin: 0 16px;
+}
+
+.courses h4 {
+    margin: 0 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.courses p {
+    margin: 0 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+/* End of 3/4 Container */
+
+/* Start of 4/4 Container */
+.container4 h2 {
+    text-align: center;
+    padding: 32px 0;
+}
+
+.container4 .containerRow {
+    display: flex;
+    padding-bottom: 32px;
+}
+
+#videoContainer4 h3 {
+    padding-top: 24px;
+    padding-bottom: 15px;
+}
+
+#videoContainer4 {
+    width: 60%;
+    margin: 0 24px;
+}
+
+#videoContainer4 video {
+    width: 100%;
+}
+
+#exhibitContainer4 {
+    width: 40%;
+    margin-right: 24px;
+}
+
+#exhibit1 {
+    background-color: #e1dfdf;
+    display: flex;
+}
+
+#exhibitImage1 {
+    width: 35%;
+    margin: 16px;
+}
+
+#exhibitImage1 img {
+    width: 100%;
+    height: auto;
+}
+
+#exhibitInfo1 {
+    width: 65%;
+    margin: auto;
+}
+
+#exhibit2 {
+    display: flex;
+}
+
+#exhibitImage2 {
+    width: 35%;
+    margin: 16px;
+}
+
+#exhibitImage2 img {
+    width: 100%;
+    height: auto;
+}
+
+#exhibitInfo2 {
+    width: 65%;
+    margin: auto;
+}
+
+/* End of 4/4 Container */
+
+/* Start of Footer */
+footer {
+    display: flex;
+    margin-top: 16px;
+}
+
+footer #copyright {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+footer #footerNav {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+#footerNav a {
+    color: #989898;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+/* End of Footer */
+
+/* Start of Hiding Mobile Elements */
+#mobileNavBar {
+    display: none;
+}
+
+.mobileImages {
+    display: none;
+}
+
+.mobileContainer3 {
+    display: none;
+}
+
+.mobileContainer4 {
+    display: none;
+}
+
+/* End of Hiding Mobile Elements */
+
+/* End of Desktop Version */
+
+/* Start of Mobile Version */
+@media only screen and (max-width: 720px) {
+
+    /* Hide Desktop Nav Bar */
+    .navBar {
+        display: none;
+    }
+
+    /* Start of Mobile Nav Bar */
+    #mobileNavBar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 64px;
+        position: fixed;
+        background-color: #fff;
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    /* End of Mobile Nav Bar */
+
+    /* Start of 1/4 Mobile Container */
+    /* Start of 1/4 Container */
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #c4c2c2;
+        padding-top: 64px;
+        /* so that the Nav Bar will not overlap this section */
+    }
+
+    #imageContainer1 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    #imageContainer1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #paraContainer1 {
+        margin: auto;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #paraContainer1 h1 {
+        margin-bottom: 16px;
+        margin-right: auto;
+    }
+
+    #startHereButton {
+        background-color: #515151;
+        border: none;
+        color: #fff;
+        padding: 5px;
+        font-size: 12px;
+        margin-top: 8px;
+        cursor: pointer;
+        width: 250px;
+    }
+
+    /* End of 1/4 Mobile Container */
+
+    /* Start of 2/4 Mobile Container */
+    #imageContainer2 {
+        display: none;
+    }
+
+    .desktopImages {
+        display: none;
+    }
+
+    #eventContainer2 {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 32px;
+    }
+
+    #orientation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #orientationImage {
+        width: auto;
+        padding: 0;
+        padding: 32px 32px 16px 32px;
+    }
+
+    #orientationImage .mobileImages {
+        display: flex;
+
+    }
+
+    #orientationInfo {
+        margin: 0;
+        /* Reset margin */
+        padding-left: 48px;
+        /* 32px + 16px = 48px */
+    }
+
+    #campus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #campusImage {
+        width: auto;
+        padding: 0;
+        padding: 32px 32px 16px 32px;
+    }
+
+    #campusImage .mobileImages {
+        display: flex;
+    }
+
+    #campusInfo {
+        margin: 0;
+        /* Reset margin */
+        padding-left: 48px;
+        /* 32px + 16px = 48px */
+    }
+
+    #campusInfo p {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    #guestLecture {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #guestLectureImage {
+        width: auto;
+        padding: 0;
+        padding: 32px 32px 16px 32px;
+    }
+
+    #guestLectureImage .mobileImages {
+        display: flex;
+    }
+
+    #guestLectureInfo {
+        margin: 0;
+        /* Reset margin */
+        padding-left: 48px;
+        /* 32px + 16px = 48px */
+    }
+
+    #guestLectureInfo p {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    #eventContainer2 a {
+        color: #4577bc;
+        text-decoration: none;
+    }
+
+    /* End of 2/4 Mobile Container */
+
+    /* Hide 3/4 Desktop Container */
+    .container3 {
+        display: none;
+    }
+
+    /* Start of 3/4 Mobile Container */
+    .mobileContainer3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 32px 0 16px 0;
+        /* 16px + last .courses 16px = 32px*/
+    }
+
+    .mobileContainer3 h2 {
+        padding-bottom: 0px;
+    }
+
+    #mobileCoursesContainer3 {
+        width: 100%;
+        padding: 0px 72px;
+        /* side measurement of 72px */
+    }
+
+    #mobileCoursesContainer3 h4 {
+        padding: 16px 0;
+    }
+
+    #mobileCoursesContainer3 .courses {
+        background-color: #e1dfdf;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    /* End of 3/4 Mobile Container */
+
+    /* Hide 3/4 Desktop Container */
+    .container4 {
+        display: none;
+    }
+
+    /* Start of 4/4 Mobile Container */
+    .mobileContainer4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+        }
+
+    #mobileVideoContainer4 video {
+        width: 100%;
+        padding-top: 32px;
+    }
+
+    /* End of 4/4 Movile Container */
+
+
+
+
+}
+
+/* End of Mobile Version */
